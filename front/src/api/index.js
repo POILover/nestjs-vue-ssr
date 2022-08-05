@@ -7,9 +7,16 @@ import request from "../utils/request";
 //         data
 //     })
 
+export const apiGetUserList = (params) =>
+  request({
+    url: "/api/users",
+    method: "get",
+    params,
+  });
+
 export const apiTest = (params) =>
   request({
-    url: "/api/test",
+    url: "/api/users",
     method: "get",
     params,
   });

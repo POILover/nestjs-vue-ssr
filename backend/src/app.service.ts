@@ -8,7 +8,7 @@ export class AppService {
     @InjectRepository(User)
     private userRepository: Repository<User>,
   ) {}
-  getHello(): Promise<User[]> {
+  getUserList(): Promise<User[]> {
     return this.userRepository.find();
   }
 }
